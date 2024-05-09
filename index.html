@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Iron Man Marcello</title>
+  </head>
+  <body>
+    <!-- Background video -->
+    <video id="intro-video" autoplay muted>
+      <source src="assets/intro.mp4" type="video/mp4" />
+    </video>
+    <video id="loop-video" autoplay muted loop>
+      <source src="assets/still.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Bot videos -->
+    <div class="bot-container">
+      <video id="idle-bot" class="vid idle-vid" src="assets/idle.mp4" autoplay muted loop></video>
+      <video id="talking-bot" class="vid talking-vid" src="assets/talk.mp4" autoplay loop muted></video>
+
+      <div id="idle-bot-canvas" class="box">
+        <canvas id="idle-canvas" width="7000" height="900"></canvas>
+      </div>
+      <div id="talking-bot-canvas" class="box">
+        <canvas id="talking-canvas" width="7000" height="900"></canvas>
+      </div>
+    </div>
+
+    <div class="chat-container" id="chat-container">
+      <textarea name="inputText" id="inputText" placeholder="Ask me!"></textarea>
+      <button id="sendButton">Send</button>
+    </div>
+
+    <div class="chat-log">
+      <img class="bot-response-bg" src="assets/Final project0.png" alt="Bot respond background" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
